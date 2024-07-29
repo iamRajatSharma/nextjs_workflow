@@ -1,10 +1,10 @@
 import React from "react";
-import LoginComponent from "./components/LoginComponent";
+import RegisterComponent from "../components/RegisterComponent";
 
 export default function Home() {
     return (
         <React.Fragment>
-            <LoginComponent />
+            <RegisterComponent />
         </React.Fragment>
     );
 }

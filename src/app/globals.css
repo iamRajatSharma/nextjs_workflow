@@ -1,33 +1,159 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html,
+body,
+::root {
+  padding: 0;
+  margin: 0;
+  font-family: Barlow;
+}
+.login-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  width: 528px;
+}
+.workflo {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #4534ac;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.custom-input {
+  height: 45px;
+  background-color: #8080801f !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.custom-input:focus {
+  height: 45px;
+  background-color: #8080801f !important;
+}
+.login-btn {
+  background: linear-gradient(180deg, #4c38c2 0%, #2f2188 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  color: white !important;
+  width: 100%;
+  height: 45px;
+  border: 1px solid;
+  border-image-source: linear-gradient(360deg, #4b36cc 0%, #9c93d4 107.69%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.login-bottom {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: center;
+}
+.login-card {
+  padding: 50px;
+  width: 900px;
+}
+.centered-div {
+  height: 100vh;
+  width: 100vh;
+}
+
+/* .card {
+  width: Fixed (648px) px;
+  height: Hug (556px) px;
+  top: 90px;
+  left: 396px;
+  padding: 60px 0px 0px 0px;
+  gap: 32px;
+  border-radius: 16px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+} */
+
+a {
+  text-decoration: none !important;
+}
+
+.user img {
+  width: 31px;
+  height: 31px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  margin-right: 10px;
+}
+
+.sidebar-options div {
+  font-size: 22px;
+  padding: 5px;
+}
+.sidebar-options span {
+  margin-left: 15px;
+}
+
+.col-lg-2 {
+  border-right: 3px solid #8080801f !important;
+}
+
+.container,
+.row,
+.col-lg-2 {
+  height: 100vh;
+}
+
+.active {
+  background-color: #8080801f !important;
+  border-radius: 7px;
+}
+
+.logout-btn {
+  background-color: #8080801f !important;
+  border-radius: 7px;
+}
+
+.create-task {
+  background: linear-gradient(180deg, #4c38c2 0%, #2f2188 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  color: white !important;
+  width: 100%;
+}
+
+.col-lg-10 {
+  background: #8080801f !important;
+}
+
+.heading-1 {
+  font-weight: 700;
+  /* color: #8080801f !important; */
+}
+
+.right-side-box img {
+  border-radius: 7px;
+  margin-top: 7px;
+}
+.right-side-box {
+  background-color: white;
+  border-radius: 8px;
+  margin: 5px 5px;
+  padding: 5px;
+}
+
+.row {
+  height: auto;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.d-flex.justify-content-end div {
+  padding: 0px 15px;
+  font-size: 22px;
+}
+
+.btn-status {
+  border-radius: 8px;
+  background-color: red !important;
+  width: fit-content;
+  color: white!important;
+  padding: 2px 5px!important;
+}
+.card-heading {
+  font-weight: 600;
 }
